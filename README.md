@@ -1,33 +1,39 @@
-# Serverless Multiple API
+Serverless Multiple API
+Proyecto basado en NestJS, diseñado para ejecutarse de manera serverless utilizando AWS Lambda y API Gateway. Esta API integra múltiples fuentes externas para ofrecer datos enriquecidos y almacenarlos de forma eficiente.
 
-Proyecto basado en **[NestJs](https://github.com/nestjs/nest)** y utilizando dos APIs externas: **[SWAPI](https://swapi.py4e.com/)** (Star Wars API) y **[Open Meteo](https://open-meteo.com/)**.
+🌐 APIs Integradas
+SWAPI – API del universo de Star Wars.
 
-Esta API está diseñada para funcionar de manera serverless, utilizando **AWS Lambda** y **API Gateway** para manejar solicitudes de diferentes servicios.
+Open Meteo – Provee información meteorológica actual.
 
-## Instalación
+AWS DynamoDB – Base de datos NoSQL utilizada para almacenar y fusionar datos obtenidos de las APIs externas.
 
-Para instalar las dependencias necesarias, ejecuta el siguiente comando:
+Los datos obtenidos de SWAPI y Open Meteo se combinan de forma inteligente y se almacenan en DynamoDB, permitiendo consultar información enriquecida con base en el timestamp del último ingreso.
 
-```bash
-$ npm install
-```
+🚀 Instalación
+bash
+Copy
+Edit
+npm install
+▶️ Ejecución
+bash
+Copy
+Edit
+# Local con Serverless Offline
+sls offline
 
-## Ejecutar el App
+# Despliegue en AWS
+sls deploy
+⚠️ Asegúrate de tener configuradas tus credenciales AWS en el archivo ~/.aws/credentials.
 
-```bash
-# Local
-$ sls offline
+✅ Pruebas
+bash
+Copy
+Edit
+npm run test
+📄 Documentación Swagger
+La documentación de la API se genera automáticamente con Swagger y está disponible en:
 
-# Despliegue AWS (asegurar de tener configurado las credenciales en ./aws)
-$ sls deploy
-```
+🔗 https://v7cmfko9ef.execute-api.us-east-1.amazonaws.com/api
 
-## Test
 
-```bash
-$ npm run test
-```
-
-## Documentación
-
-Documentación Swagger autogenerada en `/api`
