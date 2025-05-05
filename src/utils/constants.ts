@@ -1,0 +1,36 @@
+export const SWAPI_BASE_URL = 'https://swapi.py4e.com/api';
+export const OPEN_METEO_BASE_URL = 'https://api.open-meteo.com/v1/forecast';
+export const CACHE_TTL_MINUTES = 30;
+
+export const planetCoordinates: Record<string, { lat: number; lon: number }> = {
+  Tatooine: { lat: 34.5, lon: 40.0 },
+  Alderaan: { lat: 45.0, lon: -30.0 },
+  'Yavin IV': { lat: 10.0, lon: 60.0 },
+  Hoth: { lat: -60.0, lon: 100.0 },
+  Dagobah: { lat: -20.0, lon: 140.0 },
+  Bespin: { lat: 15.0, lon: -75.0 },
+  Endor: { lat: 30.0, lon: 120.0 },
+  Naboo: { lat: 20.0, lon: 85.0 },
+  Coruscant: { lat: 0.0, lon: 0.0 },
+  Kamino: { lat: -45.0, lon: 135.0 },
+  Geonosis: { lat: 24.0, lon: 54.0 },
+  Utapau: { lat: -25.3, lon: 27.5 },
+  Mustafar: { lat: 64.1, lon: -21.9 },
+  Kashyyyk: { lat: 7.0, lon: 100.5 },
+  'Polis Massa': { lat: 31.8, lon: 35.2 },
+  Mygeeto: { lat: 44.5, lon: 26.1 },
+  Felucia: { lat: -15.4, lon: 28.3 },
+  'Cato Neimoidia': { lat: 39.9, lon: 32.8 },
+  Saleucami: { lat: -14.2, lon: -75.2 },
+  Stewjon: { lat: 45.0, lon: -93.0 },
+  Eriadu: { lat: -34.6, lon: -58.4 },
+  Corellia: { lat: 50.1, lon: 8.7 },
+  Rodia: { lat: 21.3, lon: -157.8 },
+  'Nal Hutta': { lat: 29.9, lon: 90.0 },
+  Dantooine: { lat: 53.3, lon: -6.3 },
+  'Bestine IV': { lat: 35.0, lon: -85.0 },
+  'Ord Mantell': { lat: 53.5, lon: -113.5 },
+  Trandosha: { lat: -1.2, lon: 36.8 },
+  Socorro: { lat: 33.9, lon: -106.9 },
+  'Mon Cala': { lat: -33.9, lon: 18.4 },
+};
